@@ -8,7 +8,7 @@ const useSearchMovie = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const apikey = '77d81048';
+  const apikey = 'd40e95d5';
 
   const searchMovie = async () => {
     if (!title) {
@@ -25,7 +25,7 @@ const useSearchMovie = () => {
           t: title,
           y: year,
           plot: 'full',
-          apikey: apikey, // Replace with your API key
+          apikey: apikey,
         },
       });
 

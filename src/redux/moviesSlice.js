@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const apikey = '77d81048';
+const apikey = 'd40e95d5';
 const url = `http://www.omdbapi.com/?apikey=${apikey}`;
 
 const genres = [

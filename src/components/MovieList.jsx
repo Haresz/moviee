@@ -9,13 +9,7 @@ const getHighestRatedMovie = (movies) => {
   }, {});
 };
 
-const MovieList = ({ movies, loadingPopular, errorPopular }) => {
-  useEffect(() => {
-    if (errorPopular) {
-      alert(`Error loading movies: ${errorPopular}`);
-    }
-  }, [errorPopular]);
-
+const MovieList = ({ movies, loadingPopular }) => {
   return (
     <div className="mx-auto">
       {loadingPopular ? (

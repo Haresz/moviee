@@ -10,7 +10,6 @@ const Home = () => {
   const dispatch = useDispatch();
   const movies = useSelector((state) => state.movies.movies);
   const loadingPopular = useSelector((state) => state.movies.loading);
-  const errorPopular = useSelector((state) => state.movies.error);
 
   useEffect(() => {
     dispatch(fetchMoviesByGenre());
@@ -20,11 +19,7 @@ const Home = () => {
 
   return (
     <>
-      <MovieList
-        movies={movies}
-        loadingPopular={loadingPopular}
-        errorPopular={errorPopular}
-      />
+      <MovieList movies={movies} loadingPopular={loadingPopular} />
       <SearchMovie
         title={title}
         setTitle={setTitle}

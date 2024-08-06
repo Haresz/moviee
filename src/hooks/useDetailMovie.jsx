@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const apikey = '77d81048';
+const apikey = 'd40e95d5';
 const url = `http://www.omdbapi.com/?apikey=${apikey}`;
 
 const useDetailMovie = (imdbID) => {
