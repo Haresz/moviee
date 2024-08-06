@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  max-width: 1200px;
+}
+
+.border {
+  border: 1px solid #e5e7eb;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gray-700 {
+  color: #4a5568;
+}
