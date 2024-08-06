@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const apikey = 'd40e95d5';
-const url = `http://www.omdbapi.com/?apikey=${apikey}`;
+const url = `https://www.omdbapi.com/?apikey=${apikey}`;
 
 const genres = [
   'Action',
